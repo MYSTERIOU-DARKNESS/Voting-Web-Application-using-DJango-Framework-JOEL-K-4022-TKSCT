@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+.navbar {
+    background-color: #6A0DAD;
+    box-shadow: 0 0 10px #6A0DAD; /* Optional: Add a subtle shadow for depth */
+}
+
+/* Pink glow effect on hover or focus */
+.nav-link:hover,
+.nav-link:focus {
+    color: #FF6EC7 !important; /* Pink color on hover or focus */
+    text-shadow: 0 0 10px #FF6EC7; /* Pink glow effect */
+    transition: color 0.5s ease, text-shadow 0.5s ease; /* Smooth transition effect */
+}
+
+/* Remove outline on focus */
+.nav-link:focus,
+.nav-link:active {
+    outline: none;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+}
+

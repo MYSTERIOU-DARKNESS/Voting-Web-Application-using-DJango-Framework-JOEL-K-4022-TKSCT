@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+.container {
+    width: 100%;
+    height: 100vh; /* Set height to 100% of viewport height */
+    padding: 0;
+    margin: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 100%; /* Ensure the form takes up full width */
+    max-width: 400px; /* Set maximum width for better readability */
+}
+
+/* Style for the text */
+h2, label, h1, h3 {
+    color: white;
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.5); /* Set a semi-transparent black background */
+    padding: 20px; /* Add padding for better visibility */
+    border-radius: 10px; /* Optional: Add rounded corners for a nicer look */
+}
